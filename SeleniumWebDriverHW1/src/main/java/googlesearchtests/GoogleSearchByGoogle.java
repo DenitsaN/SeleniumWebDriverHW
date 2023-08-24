@@ -53,7 +53,7 @@ public class GoogleSearchByGoogle {
         String actualResult = firstResult.getText();
 
         Assertions.assertTrue((actualResult.equals(expectedResultFirst)) || (actualResult.equals(expectedResultSecond)),
-                "The searched result is not found");
+                "The result is not found");
 
         // Close the browser
         driver.quit();
